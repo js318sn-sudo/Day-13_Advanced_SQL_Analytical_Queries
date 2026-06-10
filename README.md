@@ -11,12 +11,17 @@ SQL (Structured Query Language)
 ## Technologies Used
 
 - SQL
+- CSV Files
 - SQL Terminal
-- CSV Datasets
-- JOIN Operations
-- GROUP BY Clause
-- HAVING Clause
-- Aggregate Functions (SUM, COUNT, AVG)
+
+## SQL Concepts Used
+
+* SELECT Statements
+* INNER JOIN
+* GROUP BY
+* HAVING
+* ORDER BY
+* Aggregate Functions (SUM, COUNT, AVG)
 
 ## Project Overview
 
