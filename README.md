@@ -58,7 +58,7 @@ PROJECT STRUCTURE
 SQL_Analytical_Queries_Project/
 
 ├── library_data.csv
-├── query_analysis.ipynb
+├── query_analysis.sql
 └── README.md
 
 WHERE TO RUN THE CODE
