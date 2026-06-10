@@ -12,6 +12,16 @@ SQL (Structured Query Language)
 
 SQL Terminal
 
+## Technologies Used
+
+- SQL
+- SQL Terminal
+- CSV Datasets
+- JOIN Operations
+- GROUP BY Clause
+- HAVING Clause
+- Aggregate Functions (SUM, COUNT, AVG)
+
 ## Project Overview
 
 This project demonstrates advanced SQL analytical queries using multiple related datasets. The project focuses on analyzing student transactions, book circulation, and fine records using JOIN, GROUP BY, HAVING, and aggregate functions.
