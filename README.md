@@ -1,8 +1,8 @@
 # ADVANCED SQL ANALYTICAL QUERIES PROJECT
- 
+
 ## Project Milestone
 
-Day 13 - SQL Analytical Queries (JOIN, GROUP BY, HAVING)
+Day 13 - Advanced SQL (JOIN, GROUP BY, HAVING)
 
 ## Language Used
 
@@ -14,9 +14,9 @@ SQL Terminal
 
 ## Project Overview
 
-This project demonstrates advanced SQL analytical queries using a Library Management System dataset. The project focuses on analyzing student transactions, book circulation, and fine records using SQL operations such as JOIN, GROUP BY, HAVING, and aggregate functions.
+This project demonstrates advanced SQL analytical queries using multiple related datasets. The project focuses on analyzing student transactions, book circulation, and fine records using JOIN, GROUP BY, HAVING, and aggregate functions.
 
-The objective is to transform structured data into meaningful insights through SQL-based analysis.
+The objective is to transform structured data into meaningful insights through SQL analysis.
 
 ## Objectives
 
@@ -24,12 +24,10 @@ The objective is to transform structured data into meaningful insights through S
 * Use JOIN operations to combine multiple tables
 * Apply GROUP BY for data aggregation
 * Use HAVING clause for filtered grouped results
-* Generate meaningful insights from library transactions
+* Generate meaningful insights from transaction records
 * Analyze student and author activity
 
 ## Dataset Description
-
-The project uses three related datasets.
 
 ### Students Table
 
@@ -62,26 +60,29 @@ The project uses three related datasets.
 
 * Student-wise transaction analysis
 * Student-wise total fine calculation
+* Student-wise average fine analysis
 * Author-wise book activity analysis
-* Most active students analysis
 * Fine filtering using HAVING clause
+* JOIN operations between related tables
 
 ## Key Insights
 
-* Some students have higher transaction frequency than others.
-* Fine amounts vary among students.
-* Certain authors have higher circulation rates.
-* GROUP BY efficiently summarizes large datasets.
-* HAVING filters aggregated results for deeper analysis.
+* John has the highest total fine amount.
+* John has the highest average fine.
+* Alice has a moderate fine amount.
+* Bob has no fine amount.
+* Mark Lee has the highest book circulation.
+* GROUP BY summarizes records efficiently.
+* HAVING filters grouped results based on conditions.
 
 ## Project Structure
 
-SQL_Analytical_Queries_Project/
+Advanced_SQL_Analytical_Queries_Project/
 
 ├── students.csv
 ├── books.csv
 ├── transactions.csv
-├── queries.sql
+├── queries_analysis.sql
 ├── output.md
 └── README.md
 
@@ -93,7 +94,7 @@ SQL Terminal
 
 1. Create the required tables.
 2. Import the datasets.
-3. Execute the SQL queries.
+3. Execute SQL queries.
 4. Perform JOIN operations.
 5. Execute GROUP BY queries.
 6. Apply HAVING conditions.
@@ -101,5 +102,6 @@ SQL Terminal
 
 ## Conclusion
 
-This project demonstrates how SQL analytical queries can be used to process structured datasets and extract meaningful insights. The implementation of JOIN, GROUP BY, and HAVING helps in understanding relationships between datasets and supports data-driven decision making.
+This project demonstrates how advanced SQL analytical queries can be used to process structured datasets and extract meaningful insights. The implementation of JOIN, GROUP BY, HAVING, SUM, COUNT, and AVG helps in understanding relationships between datasets and supports data-driven decision making.
+
 
