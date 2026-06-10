@@ -62,6 +62,10 @@ SQL_Analytical_Queries_Project/
 ├── output.md
 └── README.md
 
+Language Used
+
+SQL (Structured Query Language)
+
 WHERE TO RUN THE CODE
 
 SQL Terminal
