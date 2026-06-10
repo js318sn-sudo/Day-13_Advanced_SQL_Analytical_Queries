@@ -39,13 +39,25 @@
 
 ---
 
+# STUDENT WISE AVERAGE FINE
+
+| StudentName | AverageFine |
+| ----------- | ----------- |
+| John        | 40          |
+| Alice       | 10          |
+| Bob         | 0           |
+
+---
+
 # KEY OBSERVATIONS
 
 * John has the highest total fine amount.
+* John also has the highest average fine.
 * Alice has a moderate fine amount.
-* Bob has no fine.
+* Bob has no fine amount.
 * Mark Lee has the highest book circulation.
 * JOIN combines data from multiple tables.
 * GROUP BY summarizes records efficiently.
 * HAVING filters grouped results based on conditions.
+
 
