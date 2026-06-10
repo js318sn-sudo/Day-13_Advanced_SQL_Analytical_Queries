@@ -8,10 +8,6 @@ Day 13 - Advanced SQL (JOIN, GROUP BY, HAVING)
 
 SQL (Structured Query Language)
 
-## Environment
-
-SQL Terminal
-
 ## Technologies Used
 
 - SQL
@@ -95,20 +91,6 @@ Advanced_SQL_Analytical_Queries_Project/
 ├── queries_analysis.sql
 ├── output.md
 └── README.md
-
-## Where To Run The Code
-
-SQL Terminal
-
-## Steps To Run
-
-1. Create the required tables.
-2. Import the datasets.
-3. Execute SQL queries.
-4. Perform JOIN operations.
-5. Execute GROUP BY queries.
-6. Apply HAVING conditions.
-7. Analyze the generated results.
 
 ## Conclusion
 
