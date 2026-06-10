@@ -1,4 +1,6 @@
-ADVANCED SQL ANALYTICAL QUERIES (JOIN, GROUP BY, HAVING)
+## Project Milestone
+
+Day 13 - SQL Analytical Queries (JOIN, GROUP BY, HAVING)
 
 PROJECT OVERVIEW
 
@@ -65,6 +67,10 @@ SQL_Analytical_Queries_Project/
 Language Used
 
 SQL (Structured Query Language)
+
+## Environment
+
+SQL Terminal 
 
 WHERE TO RUN THE CODE
 
