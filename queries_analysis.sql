@@ -16,7 +16,7 @@ CREATE TABLE Transactions (
     Fine INT
 );
 
-INSERT INTO Students VALUES
+INSERT INTO Students (StudentID, StudentName) VALUES
 ('S01','John'),
 ('S02','Alice'),
 ('S03','Bob'),
@@ -24,14 +24,14 @@ INSERT INTO Students VALUES
 ('S05','Mia'),
 ('S06','Noah');
 
-INSERT INTO Books VALUES
+INSERT INTO Books (BookID, BookTitle, AuthorName) VALUES
 ('B01','Data Structures','Mark Lee'),
 ('B02','Database Systems','Jane Smith'),
 ('B03','Machine Learning','Robert Brown'),
 ('B04','Python Basics','Mark Lee'),
 ('B05','AI Fundamentals','David Clark');
 
-INSERT INTO Transactions VALUES
+INSERT INTO Transactions (TransactionID, StudentID, BookID, Fine) VALUES
 ('T01','S01','B01',50),
 ('T02','S02','B02',0),
 ('T03','S01','B03',30),
@@ -39,48 +39,47 @@ INSERT INTO Transactions VALUES
 ('T05','S02','B05',20);
 
 -- INNER JOIN
-SELECT s.StudentName,
-       b.BookTitle,
-       b.AuthorName,
-       t.Fine
+SELECT 
+    s.StudentName,
+    b.BookTitle,
+    b.AuthorName,
+    t.Fine
 FROM Transactions t
-INNER JOIN Students s
-ON t.StudentID = s.StudentID
-INNER JOIN Books b
-ON t.BookID = b.BookID;
+INNER JOIN Students s ON t.StudentID = s.StudentID
+INNER JOIN Books b ON t.BookID = b.BookID;
 
 -- SUM + GROUP BY
-SELECT s.StudentName,
-       SUM(t.Fine) AS TotalFine
+SELECT 
+    s.StudentName,
+    SUM(t.Fine) AS TotalFine
 FROM Transactions t
-INNER JOIN Students s
-ON t.StudentID = s.StudentID
+INNER JOIN Students s ON t.StudentID = s.StudentID
 GROUP BY s.StudentName
 ORDER BY TotalFine DESC;
 
 -- HAVING
-SELECT s.StudentName,
-       SUM(t.Fine) AS TotalFine
+SELECT 
+    s.StudentName,
+    SUM(t.Fine) AS TotalFine
 FROM Transactions t
-INNER JOIN Students s
-ON t.StudentID = s.StudentID
+INNER JOIN Students s ON t.StudentID = s.StudentID
 GROUP BY s.StudentName
 HAVING SUM(t.Fine) > 20;
 
 -- COUNT + GROUP BY
-SELECT b.AuthorName,
-       COUNT(t.TransactionID) AS BooksIssued
+SELECT 
+    b.AuthorName,
+    COUNT(t.TransactionID) AS BooksIssued
 FROM Transactions t
-INNER JOIN Books b
-ON t.BookID = b.BookID
+INNER JOIN Books b ON t.BookID = b.BookID
 GROUP BY b.AuthorName
 ORDER BY BooksIssued DESC;
 
 -- AVG + GROUP BY
-SELECT s.StudentName,
-       AVG(t.Fine) AS AverageFine
+SELECT 
+    s.StudentName,
+    AVG(t.Fine) AS AverageFine
 FROM Transactions t
-INNER JOIN Students s
-ON t.StudentID = s.StudentID
+INNER JOIN Students s ON t.StudentID = s.StudentID
 GROUP BY s.StudentName
 ORDER BY AverageFine DESC;
