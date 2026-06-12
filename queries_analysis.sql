@@ -90,4 +90,4 @@ INNER JOIN Students s
 ON t.StudentID = s.StudentID
 GROUP BY s.StudentName
 ORDER BY AverageFine DESC;
-
+```
