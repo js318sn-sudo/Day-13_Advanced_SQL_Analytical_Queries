@@ -1,3 +1,4 @@
+```sql
 CREATE TABLE Students (
     StudentID TEXT,
     StudentName TEXT
