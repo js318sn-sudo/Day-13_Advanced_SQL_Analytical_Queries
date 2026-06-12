@@ -1,4 +1,3 @@
-```sql
 CREATE TABLE Students (
     StudentID TEXT,
     StudentName TEXT
@@ -40,7 +39,6 @@ INSERT INTO Transactions VALUES
 ('T05','S02','B05',20);
 
 -- INNER JOIN
-
 SELECT s.StudentName,
        b.BookTitle,
        b.AuthorName,
@@ -52,7 +50,6 @@ INNER JOIN Books b
 ON t.BookID = b.BookID;
 
 -- SUM + GROUP BY
-
 SELECT s.StudentName,
        SUM(t.Fine) AS TotalFine
 FROM Transactions t
@@ -62,7 +59,6 @@ GROUP BY s.StudentName
 ORDER BY TotalFine DESC;
 
 -- HAVING
-
 SELECT s.StudentName,
        SUM(t.Fine) AS TotalFine
 FROM Transactions t
@@ -72,7 +68,6 @@ GROUP BY s.StudentName
 HAVING SUM(t.Fine) > 20;
 
 -- COUNT + GROUP BY
-
 SELECT b.AuthorName,
        COUNT(t.TransactionID) AS BooksIssued
 FROM Transactions t
@@ -82,7 +77,6 @@ GROUP BY b.AuthorName
 ORDER BY BooksIssued DESC;
 
 -- AVG + GROUP BY
-
 SELECT s.StudentName,
        AVG(t.Fine) AS AverageFine
 FROM Transactions t
@@ -90,4 +84,3 @@ INNER JOIN Students s
 ON t.StudentID = s.StudentID
 GROUP BY s.StudentName
 ORDER BY AverageFine DESC;
-```
